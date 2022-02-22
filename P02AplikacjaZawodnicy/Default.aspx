@@ -181,6 +181,7 @@
               <div class="card-header">
                   <form runat="server" >
                          <asp:Button ID="btnNowy" OnClick="btnNowy_Click" CssClass="btn btn-primary btn-block" runat="server" Text="Nowy" />
+                         <asp:Button ID="btnRaport" OnClick="btnRaport_Click" runat="server" Text="Raport" />
                   </form>
                               
               </div>    
@@ -247,7 +248,7 @@
                         <input id="txtStrona" style="width:50px" type="text" value="1" />
                          <i id="btnPrawo"  style="cursor:pointer"  class="now-ui-icons arrows-1_minimal-right"></i>
                     </div>
-
+                    
                 </div>
               </div>
             </div>

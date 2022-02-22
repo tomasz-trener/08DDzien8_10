@@ -1,4 +1,5 @@
 ﻿using P04AplikacjaZawodnicy.Core;
+using P04AplikacjaZawodnicy.Core.Raporty;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,16 @@ namespace P02AplikacjaZawodnicy
         protected void btnNowy_Click(object sender, EventArgs e)
         {
             Response.Redirect("SzczegolyView.aspx");
+        }
+
+        protected void btnRaport_Click(object sender, EventArgs e)
+        {
+            string sciezka = System.IO.Path.Combine(Request.PhysicalApplicationPath, "raport.pdf");
+            //string sciezka = "c:\\dane\\zawpodnicyRaport.pdf";
+            ManagerRaportow mr = new ManagerRaportow();
+            mr.StworzRaportZawodnicy(Zawodnicy, sciezka);
+            Response.Redirect("RaportServer.aspx");
+
         }
     }
 }

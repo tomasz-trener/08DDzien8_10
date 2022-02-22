@@ -97,6 +97,7 @@
     <Content Include="js\DefaultJS.js" />
     <Content Include="js\WykresyJS.js" />
     <Content Include="lib\kendo\kendo.datepicker.js" />
+    <Content Include="RaportServer.aspx" />
     <Content Include="styles\kendo\styles\mobile\images\back.png" />
     <Content Include="styles\kendo\styles\mobile\images\kendoui.svg" />
     <Content Include="styles\kendo\styles\mobile\images\wp8_icons.png" />
@@ -384,6 +385,13 @@
       <DependentUpon>DefaultServer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaportServer.aspx.cs">
+      <DependentUpon>RaportServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RaportServer.aspx.designer.cs">
+      <DependentUpon>RaportServer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SzczegolyView.aspx.cs">
       <DependentUpon>SzczegolyView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
