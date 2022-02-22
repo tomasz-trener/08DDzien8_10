@@ -1,0 +1,1000 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06405A77-664E-4344-940E-477887164BD6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>P02AplikacjaZawodnicy</RootNamespace>
+    <AssemblyName>P02AplikacjaZawodnicy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44329</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="P04AplikacjaZawodnicy.Core">
+      <HintPath>..\..\08Dzien6-master\P04AplikacjaZawodnicy.Core\bin\Debug\P04AplikacjaZawodnicy.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\now-ui-dashboard.css" />
+    <Content Include="assets\css\now-ui-dashboard.min.css" />
+    <Content Include="assets\demo\demo.css" />
+    <Content Include="assets\demo\demo.js" />
+    <Content Include="assets\img\apple-icon.png" />
+    <Content Include="assets\img\bg5.jpg" />
+    <Content Include="assets\img\default-avatar.png" />
+    <Content Include="assets\img\favicon.png" />
+    <Content Include="assets\img\header.jpg" />
+    <Content Include="assets\img\mike.jpg" />
+    <Content Include="assets\img\now-logo.png" />
+    <Content Include="assets\img\now-ui-dashboard.gif" />
+    <Content Include="assets\js\core\bootstrap.min.js" />
+    <Content Include="assets\js\core\jquery.min.js" />
+    <Content Include="assets\js\core\popper.min.js" />
+    <Content Include="assets\js\now-ui-dashboard.js" />
+    <Content Include="assets\js\now-ui-dashboard.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-notify.js" />
+    <Content Include="assets\js\plugins\chartjs.min.js" />
+    <Content Include="assets\js\plugins\perfect-scrollbar.jquery.min.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultServer.aspx" />
+    <Content Include="images\spinning-loading.gif" />
+    <Content Include="js\DefaultJS.js" />
+    <Content Include="js\WykresyJS.js" />
+    <Content Include="lib\kendo\kendo.datepicker.js" />
+    <Content Include="styles\kendo\styles\mobile\images\back.png" />
+    <Content Include="styles\kendo\styles\mobile\images\kendoui.svg" />
+    <Content Include="styles\kendo\styles\mobile\images\wp8_icons.png" />
+    <Content Include="styles\kendo\styles\mobile\images\wp8_inverseicons.png" />
+    <Content Include="styles\kendo\styles\web\Black\editor.png" />
+    <Content Include="styles\kendo\styles\web\Black\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Black\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Black\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Black\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Black\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Black\markers.png" />
+    <Content Include="styles\kendo\styles\web\Black\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Black\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Black\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Black\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Black\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Black\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Black\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\editor.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\loading.gif" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\markers.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\sprite.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\BlueOpal\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\editor.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\markers.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Default\editor.png" />
+    <Content Include="styles\kendo\styles\web\Default\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Default\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Default\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Default\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Default\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Default\markers.png" />
+    <Content Include="styles\kendo\styles\web\Default\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Default\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Default\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Default\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Default\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Default\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Default\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\editor.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Fiori\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Fiori\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Fiori\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Fiori\markers.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Fiori\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Fiori\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Fiori\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Flat\editor.png" />
+    <Content Include="styles\kendo\styles\web\Flat\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Flat\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Flat\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Flat\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Flat\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Flat\markers.png" />
+    <Content Include="styles\kendo\styles\web\Flat\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Flat\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Flat\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Flat\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Flat\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Flat\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Flat\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\LICENSE.txt" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\KendoUIGlyphs.svg" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\WebComponentsIcons.svg" />
+    <Content Include="styles\kendo\styles\web\HighContrast\editor.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\HighContrast\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\HighContrast\loading.gif" />
+    <Content Include="styles\kendo\styles\web\HighContrast\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\HighContrast\markers.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\HighContrast\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\HighContrast\sprite.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\HighContrast\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\images\kendoui.svg" />
+    <Content Include="styles\kendo\styles\web\images\wp8_icons.png" />
+    <Content Include="styles\kendo\styles\web\images\wp8_inverseicons.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\editor.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\loading.gif" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\markers.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\sprite.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\MaterialBlack\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Material\editor.png" />
+    <Content Include="styles\kendo\styles\web\Material\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Material\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Material\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Material\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Material\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Material\markers.png" />
+    <Content Include="styles\kendo\styles\web\Material\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Material\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Material\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Material\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Material\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Material\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Material\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\editor.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\loading.gif" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\markers.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\sprite.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\MetroBlack\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Metro\editor.png" />
+    <Content Include="styles\kendo\styles\web\Metro\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Metro\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Metro\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Metro\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Metro\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Metro\markers.png" />
+    <Content Include="styles\kendo\styles\web\Metro\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Metro\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Metro\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Metro\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Metro\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Metro\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Metro\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\editor.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Moonlight\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Moonlight\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Moonlight\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Moonlight\markers.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Moonlight\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Moonlight\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Moonlight\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Nova\editor.png" />
+    <Content Include="styles\kendo\styles\web\Nova\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Nova\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Nova\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Nova\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Nova\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Nova\markers.png" />
+    <Content Include="styles\kendo\styles\web\Nova\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Nova\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Nova\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Nova\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Nova\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Nova\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Nova\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Office365\editor.png" />
+    <Content Include="styles\kendo\styles\web\Office365\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Office365\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Office365\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Office365\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Office365\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Office365\markers.png" />
+    <Content Include="styles\kendo\styles\web\Office365\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Office365\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Office365\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Office365\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Office365\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Office365\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Office365\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\Silver\editor.png" />
+    <Content Include="styles\kendo\styles\web\Silver\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Silver\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Silver\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Silver\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Silver\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Silver\markers.png" />
+    <Content Include="styles\kendo\styles\web\Silver\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Silver\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Silver\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Silver\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Silver\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Silver\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Silver\sprite_kpi_2x.png" />
+    <Content Include="styles\kendo\styles\web\textures\brushed-metal.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots1.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots10.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots11.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots12.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots13.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots2.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots3.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots4.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots5.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots6.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots7.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots8.png" />
+    <Content Include="styles\kendo\styles\web\textures\dots9.png" />
+    <Content Include="styles\kendo\styles\web\textures\glass-lighter.png" />
+    <Content Include="styles\kendo\styles\web\textures\glass.png" />
+    <Content Include="styles\kendo\styles\web\textures\highlight.png" />
+    <Content Include="styles\kendo\styles\web\textures\hsv-gradient.png" />
+    <Content Include="styles\kendo\styles\web\textures\hue.png" />
+    <Content Include="styles\kendo\styles\web\textures\image-default.png" />
+    <Content Include="styles\kendo\styles\web\textures\leather1.png" />
+    <Content Include="styles\kendo\styles\web\textures\leather2.png" />
+    <Content Include="styles\kendo\styles\web\textures\noise.png" />
+    <Content Include="styles\kendo\styles\web\textures\stripe1.png" />
+    <Content Include="styles\kendo\styles\web\textures\stripe2.png" />
+    <Content Include="styles\kendo\styles\web\textures\stripe3.png" />
+    <Content Include="styles\kendo\styles\web\textures\stripe4.png" />
+    <Content Include="styles\kendo\styles\web\textures\stripe5.png" />
+    <Content Include="styles\kendo\styles\web\textures\stripe6.png" />
+    <Content Include="styles\kendo\styles\web\textures\transparency-reversed.png" />
+    <Content Include="styles\kendo\styles\web\textures\transparency.png" />
+    <Content Include="styles\kendo\styles\web\textures\transtexture.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\editor.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\imagebrowser.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\indeterminate.gif" />
+    <Content Include="styles\kendo\styles\web\Uniform\loading-image.gif" />
+    <Content Include="styles\kendo\styles\web\Uniform\loading.gif" />
+    <Content Include="styles\kendo\styles\web\Uniform\loading_2x.gif" />
+    <Content Include="styles\kendo\styles\web\Uniform\markers.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\markers_2x.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\slider-h.gif" />
+    <Content Include="styles\kendo\styles\web\Uniform\slider-v.gif" />
+    <Content Include="styles\kendo\styles\web\Uniform\sprite.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\sprite_2x.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\sprite_kpi.png" />
+    <Content Include="styles\kendo\styles\web\Uniform\sprite_kpi_2x.png" />
+    <Content Include="SzczegolyView.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WykresyServer.aspx" />
+    <Content Include="WykresyView.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultServer.aspx.cs">
+      <DependentUpon>DefaultServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultServer.aspx.designer.cs">
+      <DependentUpon>DefaultServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SzczegolyView.aspx.cs">
+      <DependentUpon>SzczegolyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SzczegolyView.aspx.designer.cs">
+      <DependentUpon>SzczegolyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WykresyServer.aspx.cs">
+      <DependentUpon>WykresyServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WykresyServer.aspx.designer.cs">
+      <DependentUpon>WykresyServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WykresyView.aspx.cs">
+      <DependentUpon>WykresyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WykresyView.aspx.designer.cs">
+      <DependentUpon>WykresyView.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="now-ui-dashboard-master.zip" />
+    <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\css\now-ui-dashboard.css.map" />
+    <Content Include="assets\fonts\nucleo-license.md" />
+    <Content Include="assets\fonts\nucleo-outline.eot" />
+    <Content Include="assets\fonts\nucleo-outline.ttf" />
+    <Content Include="assets\fonts\nucleo-outline.woff" />
+    <Content Include="assets\fonts\nucleo-outline.woff2" />
+    <Content Include="assets\js\now-ui-dashboard.js.map" />
+    <Content Include="assets\scss\now-ui-dashboard.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-chart.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-map.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-plain.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\cards\_card-user.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_buttons.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_cards.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_dropdown.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_inputs.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_page-header.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_sidebar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_transparency.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\plugins\_plugin-perfect-scrollbar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_alerts.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_buttons.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_cards.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_checkboxes-radio.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_dropdown.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_fixed-plugin.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_footers.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_images.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_inputs.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_misc.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_mixins.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_navbar.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_nucleo-outline.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_page-header.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_responsive.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_sidebar-and-main-panel.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_tables.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_typography.scss" />
+    <Content Include="assets\scss\now-ui-dashboard\_variables.scss" />
+    <None Include="packages.config" />
+    <Content Include="styles\kendo\styles\common\transitions.less" />
+    <Content Include="styles\kendo\styles\mobile\android\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\android\all.less" />
+    <Content Include="styles\kendo\styles\mobile\android\base.less" />
+    <Content Include="styles\kendo\styles\mobile\android\button.less" />
+    <Content Include="styles\kendo\styles\mobile\android\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\android\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\android\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\android\light.less" />
+    <Content Include="styles\kendo\styles\mobile\android\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\android\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\android\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\android\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\android\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\android\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\android\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\android\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\android\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\android\template.less" />
+    <Content Include="styles\kendo\styles\mobile\android\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\all.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\base.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\button.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\template.less" />
+    <Content Include="styles\kendo\styles\mobile\blackberry\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\common\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\common\after.less" />
+    <Content Include="styles\kendo\styles\mobile\common\all.less" />
+    <Content Include="styles\kendo\styles\mobile\common\base.less" />
+    <Content Include="styles\kendo\styles\mobile\common\button.less" />
+    <Content Include="styles\kendo\styles\mobile\common\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\common\collapsible.less" />
+    <Content Include="styles\kendo\styles\mobile\common\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\common\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\common\icons.less" />
+    <Content Include="styles\kendo\styles\mobile\common\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\common\mixins.less" />
+    <Content Include="styles\kendo\styles\mobile\common\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\common\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\common\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\common\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\common\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\common\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\common\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\common\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\common\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\common\workarounds.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\all.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\base.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\button.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\template.less" />
+    <Content Include="styles\kendo\styles\mobile\fiori\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\all.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\base.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\button.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\template.less" />
+    <Content Include="styles\kendo\styles\mobile\flat\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\images\kendoui.ttf" />
+    <Content Include="styles\kendo\styles\mobile\images\kendoui.woff" />
+    <Content Include="styles\kendo\styles\mobile\ios7\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\all.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\base.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\button.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\template.less" />
+    <Content Include="styles\kendo\styles\mobile\ios7\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\all.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\base.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\button.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\template.less" />
+    <Content Include="styles\kendo\styles\mobile\ios\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.dataviz.mobile.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.all.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.android.dark.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.android.light.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.blackberry.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.common.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.fiori.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.flat.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.ios.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.material.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.meego.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.nova.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.office365.less" />
+    <Content Include="styles\kendo\styles\mobile\kendo.mobile.wp8.less" />
+    <Content Include="styles\kendo\styles\mobile\material\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\material\all.less" />
+    <Content Include="styles\kendo\styles\mobile\material\base.less" />
+    <Content Include="styles\kendo\styles\mobile\material\button.less" />
+    <Content Include="styles\kendo\styles\mobile\material\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\material\dark.less" />
+    <Content Include="styles\kendo\styles\mobile\material\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\material\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\material\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\material\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\material\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\material\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\material\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\material\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\material\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\material\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\material\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\material\template.less" />
+    <Content Include="styles\kendo\styles\mobile\material\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\meego.less" />
+    <Content Include="styles\kendo\styles\mobile\nova-theme.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\all.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\base.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\button.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\collapsible.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\genericContent.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\template.less" />
+    <Content Include="styles\kendo\styles\mobile\nova\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\all.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\base.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\button.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\template.less" />
+    <Content Include="styles\kendo\styles\mobile\office365\toolbar.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\actionsheet.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\all.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\base.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\button.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\buttongroup.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\drawer.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\forms.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\listview.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\modalview.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\navbar.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\popover.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\scroller.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\scrollview.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\splitview.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\switch.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\tabstrip.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\template.less" />
+    <Content Include="styles\kendo\styles\mobile\wp8\toolbar.less" />
+    <Content Include="styles\kendo\styles\web\bootstrap-mapper.less" />
+    <Content Include="styles\kendo\styles\web\Bootstrap\_variables.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\actionsheet.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\all.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\base.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\button.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\buttongroup.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\drawer.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\forms.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\listview.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\mobile-template.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\modalview.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\navbar.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\popover.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\scroller.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\scrollview.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\splitview.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\switch.less" />
+    <Content Include="styles\kendo\styles\web\common-mobile\tabstrip.less" />
+    <Content Include="styles\kendo\styles\web\common\adaptive\_layout.less" />
+    <Content Include="styles\kendo\styles\web\common\adaptive\_theme.less" />
+    <Content Include="styles\kendo\styles\web\common\all.less" />
+    <Content Include="styles\kendo\styles\web\common\base.less" />
+    <Content Include="styles\kendo\styles\web\common\calendar.less" />
+    <Content Include="styles\kendo\styles\web\common\cursors.less" />
+    <Content Include="styles\kendo\styles\web\common\dataviz.less" />
+    <Content Include="styles\kendo\styles\web\common\editor.less" />
+    <Content Include="styles\kendo\styles\web\common\font-icons.less" />
+    <Content Include="styles\kendo\styles\web\common\gantt.less" />
+    <Content Include="styles\kendo\styles\web\common\grid.less" />
+    <Content Include="styles\kendo\styles\web\common\imagebrowser.less" />
+    <Content Include="styles\kendo\styles\web\common\inputs.less" />
+    <Content Include="styles\kendo\styles\web\common\mediaplayer.less" />
+    <Content Include="styles\kendo\styles\web\common\menu.less" />
+    <Content Include="styles\kendo\styles\web\common\mixins.less" />
+    <Content Include="styles\kendo\styles\web\common\notification.less" />
+    <Content Include="styles\kendo\styles\web\common\pager.less" />
+    <Content Include="styles\kendo\styles\web\common\pivot.less" />
+    <Content Include="styles\kendo\styles\web\common\progressbar.less" />
+    <Content Include="styles\kendo\styles\web\common\responsivepanel.less" />
+    <Content Include="styles\kendo\styles\web\common\scheduler.less" />
+    <Content Include="styles\kendo\styles\web\common\splitter.less" />
+    <Content Include="styles\kendo\styles\web\common\spreadsheet.less" />
+    <Content Include="styles\kendo\styles\web\common\tabstrip.less" />
+    <Content Include="styles\kendo\styles\web\common\toolbar.less" />
+    <Content Include="styles\kendo\styles\web\common\treelist.less" />
+    <Content Include="styles\kendo\styles\web\common\upload.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\aria.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\border.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\display.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\flex.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\float.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\grid.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\order.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\overflow.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\pointer-events.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\position.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\resize.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\spacer.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\spacing.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\table-layout.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\text.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\touch-action.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\transform.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\user-select.less" />
+    <Content Include="styles\kendo\styles\web\common\utils\_index.less" />
+    <Content Include="styles\kendo\styles\web\common\virtuallist.less" />
+    <Content Include="styles\kendo\styles\web\Default\action-buttons\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\action-sheet\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\action-sheet\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\appbar\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\appbar\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\avatar\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\avatar\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\badge\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\badge\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\bottom-navigation\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\bottom-navigation\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\breadcrumb\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\breadcrumb\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\button\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\button\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\calendar\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\calendar\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\captcha\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\captcha\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\card\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\card\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\chat\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\chat\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\checkbox\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\checkbox\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\chip\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\chip\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\colorpicker\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\colorpicker\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\core\_asp-fallback.less" />
+    <Content Include="styles\kendo\styles\web\Default\core\_extra.less" />
+    <Content Include="styles\kendo\styles\web\Default\core\_index.less" />
+    <Content Include="styles\kendo\styles\web\Default\core\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\core\_normalize.less" />
+    <Content Include="styles\kendo\styles\web\Default\daterangepicker\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\daterangepicker\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\dialog\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\dialog\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\drawer\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\drawer\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\dropdowngrid\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\dropdowngrid\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\dropdownlist\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\dropdownlist\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\expansion-panel\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\expansion-panel\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\filemanager\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\filemanager\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\filter\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\filter\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\floatingactionbutton\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\floatingactionbutton\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\forms\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\forms\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\gantt\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\gantt\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\imageeditor\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\imageeditor\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\input\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\input\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\layout\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\listbox\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\listbox\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\listgroup\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\listgroup\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\listview\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\listview\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\list\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\list\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\loader\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\loader\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\menu\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\menu\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\messagebox\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\messagebox\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\multiviewcalendar\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\multiviewcalendar\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\orgchart\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\orgchart\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\panelbar\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\panelbar\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\pdf-viewer\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\pdf-viewer\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\pivotgrid\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\pivotgrid\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\popover\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\popover\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\radio\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\radio\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\rating\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\rating\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\scheduler\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\scheduler\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\scrollview\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\scrollview\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\searchbox\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\searchbox\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\skeleton\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\skeleton\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\slider\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\slider\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\stepper\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\stepper\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\switch\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\switch\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\taskboard\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\taskboard\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\textarea\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\textarea\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\tilelayout\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\tilelayout\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\timeline\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\timeline\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\toolbar\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\tooltip\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\tooltip\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\treeview\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\treeview\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\window\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\window\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\wizard\_layout.less" />
+    <Content Include="styles\kendo\styles\web\Default\wizard\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Default\_variables.less" />
+    <Content Include="styles\kendo\styles\web\Fiori\_variables.less" />
+    <Content Include="styles\kendo\styles\web\Flat\_variables.less" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\dejavu.less" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSans-Bold.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSans-BoldOblique.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSans-ExtraLight.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSans-Oblique.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSans.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSansMono-Bold.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSansMono-BoldOblique.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSansMono-Oblique.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSansMono.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSerif-Bold.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSerif-BoldItalic.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSerif-Italic.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\DejaVu\DejaVuSerif.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\KendoUIGlyphs.eot" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\KendoUIGlyphs.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\KendoUIGlyphs.woff" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\WebComponentsIcons.eot" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\WebComponentsIcons.ttf" />
+    <Content Include="styles\kendo\styles\web\fonts\glyphs\WebComponentsIcons.woff" />
+    <Content Include="styles\kendo\styles\web\HighContrast\_variables.less" />
+    <Content Include="styles\kendo\styles\web\images\kendoui.ttf" />
+    <Content Include="styles\kendo\styles\web\images\kendoui.woff" />
+    <Content Include="styles\kendo\styles\web\kendo.black.less" />
+    <Content Include="styles\kendo\styles\web\kendo.black.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.blueopal.less" />
+    <Content Include="styles\kendo\styles\web\kendo.blueopal.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.bootstrap.less" />
+    <Content Include="styles\kendo\styles\web\kendo.bootstrap.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.common-bootstrap.less" />
+    <Content Include="styles\kendo\styles\web\kendo.common-fiori.less" />
+    <Content Include="styles\kendo\styles\web\kendo.common-material.less" />
+    <Content Include="styles\kendo\styles\web\kendo.common-nova.less" />
+    <Content Include="styles\kendo\styles\web\kendo.common-office365.less" />
+    <Content Include="styles\kendo\styles\web\kendo.common.less" />
+    <Content Include="styles\kendo\styles\web\kendo.default.less" />
+    <Content Include="styles\kendo\styles\web\kendo.default.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.fiori.less" />
+    <Content Include="styles\kendo\styles\web\kendo.fiori.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.flat.less" />
+    <Content Include="styles\kendo\styles\web\kendo.flat.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.highcontrast.less" />
+    <Content Include="styles\kendo\styles\web\kendo.highcontrast.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.material.less" />
+    <Content Include="styles\kendo\styles\web\kendo.material.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.materialblack.less" />
+    <Content Include="styles\kendo\styles\web\kendo.materialblack.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.metro.less" />
+    <Content Include="styles\kendo\styles\web\kendo.metro.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.metroblack.less" />
+    <Content Include="styles\kendo\styles\web\kendo.metroblack.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.moonlight.less" />
+    <Content Include="styles\kendo\styles\web\kendo.moonlight.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.nova.less" />
+    <Content Include="styles\kendo\styles\web\kendo.nova.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.office365.less" />
+    <Content Include="styles\kendo\styles\web\kendo.office365.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.rtl.less" />
+    <Content Include="styles\kendo\styles\web\kendo.silver.less" />
+    <Content Include="styles\kendo\styles\web\kendo.silver.mobile.less" />
+    <Content Include="styles\kendo\styles\web\kendo.uniform.less" />
+    <Content Include="styles\kendo\styles\web\kendo.uniform.mobile.less" />
+    <Content Include="styles\kendo\styles\web\Material\_variables.less" />
+    <Content Include="styles\kendo\styles\web\Metro\_variables.less" />
+    <Content Include="styles\kendo\styles\web\mixins\appearance.less" />
+    <Content Include="styles\kendo\styles\web\mixins\border-radius.less" />
+    <Content Include="styles\kendo\styles\web\mixins\decoration.less" />
+    <Content Include="styles\kendo\styles\web\mixins\gradients.less" />
+    <Content Include="styles\kendo\styles\web\Nova\_variables.less" />
+    <Content Include="styles\kendo\styles\web\Office365\chat\_theme.less" />
+    <Content Include="styles\kendo\styles\web\Office365\_variables.less" />
+    <Content Include="styles\kendo\styles\web\themes\notification.less" />
+    <Content Include="styles\kendo\styles\web\themes\spreadsheet.less" />
+    <Content Include="styles\kendo\styles\web\themes\type.less" />
+    <Content Include="styles\kendo\styles\web\type-bootstrap.less" />
+    <Content Include="styles\kendo\styles\web\type-default.less" />
+    <Content Include="styles\kendo\styles\web\type-fiori.less" />
+    <Content Include="styles\kendo\styles\web\type-flat.less" />
+    <Content Include="styles\kendo\styles\web\type-highcontrast.less" />
+    <Content Include="styles\kendo\styles\web\type-material.less" />
+    <Content Include="styles\kendo\styles\web\type-metro.less" />
+    <Content Include="styles\kendo\styles\web\type-nova.less" />
+    <Content Include="styles\kendo\styles\web\type-office365.less" />
+    <Content Include="styles\kendo\styles\web\_variables.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51148</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44329/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
