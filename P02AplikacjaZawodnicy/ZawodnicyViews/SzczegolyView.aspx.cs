@@ -9,7 +9,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace P02AplikacjaZawodnicy
+namespace P02AplikacjaZawodnicy.ZawodnicyViews
 {
     public partial class SzczegolyView : System.Web.UI.Page
     {
@@ -49,7 +49,7 @@ namespace P02AplikacjaZawodnicy
                 zczytajTextboxy(Zawodnik);
                 iDostepDoDanych.Edytuj(Zawodnik);
             }
-            Response.Redirect("Default.aspx");
+            Response.Redirect("~\\Default.aspx");
         }
 
         private void zczytajTextboxy(Zawodnik z)
@@ -65,7 +65,7 @@ namespace P02AplikacjaZawodnicy
         protected void btnUsun_Click(object sender, EventArgs e)
         {
             iDostepDoDanych.Usun(Zawodnik.Id_zawodnika);
-            Response.Redirect("Default.aspx");
+            Response.Redirect("~\\Default.aspx");
         }
     }
 }

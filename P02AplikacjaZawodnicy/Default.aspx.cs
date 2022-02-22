@@ -24,7 +24,7 @@ namespace P02AplikacjaZawodnicy
  
         protected void btnNowy_Click(object sender, EventArgs e)
         {
-            Response.Redirect("SzczegolyView.aspx");
+            Response.Redirect("ZawodnicyViews\\SzczegolyView.aspx");
         }
 
         protected void btnRaport_Click(object sender, EventArgs e)
@@ -33,7 +33,7 @@ namespace P02AplikacjaZawodnicy
             //string sciezka = "c:\\dane\\zawpodnicyRaport.pdf";
             ManagerRaportow mr = new ManagerRaportow();
             mr.StworzRaportZawodnicy(Zawodnicy, sciezka);
-            Response.Redirect("RaportServer.aspx");
+            Response.Redirect("ZawodnicyViews\\RaportServer.aspx");
 
         }
     }

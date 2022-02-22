@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace P02AplikacjaZawodnicy
+namespace P02AplikacjaZawodnicy.ZawodnicyViews
 {
     public partial class WykresyView : System.Web.UI.Page
     {

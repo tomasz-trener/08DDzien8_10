@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SzczegolyView.aspx.cs" Inherits="P02AplikacjaZawodnicy.SzczegolyView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SzczegolyView.aspx.cs" Inherits="P02AplikacjaZawodnicy.ZawodnicyViews.SzczegolyView" %>
 
 <!--
 

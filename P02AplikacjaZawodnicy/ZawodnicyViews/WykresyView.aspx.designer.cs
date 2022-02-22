@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace P02AplikacjaZawodnicy
+namespace P02AplikacjaZawodnicy.ZawodnicyViews
 {
 
 
-    public partial class RaportServer
+    public partial class WykresyView
     {
     }
 }

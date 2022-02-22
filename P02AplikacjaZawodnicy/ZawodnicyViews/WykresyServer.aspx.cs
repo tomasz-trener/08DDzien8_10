@@ -10,7 +10,7 @@ using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace P02AplikacjaZawodnicy
+namespace P02AplikacjaZawodnicy.ZawodnicyViews
 {
     public partial class WykresyServer : System.Web.UI.Page
     {

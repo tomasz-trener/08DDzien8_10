@@ -218,7 +218,7 @@
 
                             <tr>
                                 <td>
-                               <a href="SzczegolyView.aspx?id=<%= Zawodnicy[i].Id_zawodnika %>"><%= Zawodnicy[i].ImieNazwisko %></a>   
+                               <a href="ZawodnicyViews\SzczegolyView.aspx?id=<%= Zawodnicy[i].Id_zawodnika %>"><%= Zawodnicy[i].ImieNazwisko %></a>   
                                 </td>
                                 <td>
                                   <%= Zawodnicy[i].Kraj %>

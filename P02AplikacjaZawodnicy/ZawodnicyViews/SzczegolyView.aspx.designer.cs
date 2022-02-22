@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace P02AplikacjaZawodnicy
+namespace P02AplikacjaZawodnicy.ZawodnicyViews
 {
 
 
