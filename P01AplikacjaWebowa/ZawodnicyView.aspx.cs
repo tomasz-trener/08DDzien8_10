@@ -1,4 +1,7 @@
 ﻿using P04AplikacjaZawodnicy.Core;
+using P04AplikacjaZawodnicy.Core.DataSource;
+using P04AplikacjaZawodnicy.Core.Domain;
+using P04AplikacjaZawodnicy.Core.Zawodnicy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +13,7 @@ namespace P01AplikacjaWebowa
 {
     public partial class ZawodnicyView : System.Web.UI.Page
     {
-        IDostepDoDanych iDostepDoDanych = new ZawodnicyRepository();
+        IZawodnicyDataSource iDostepDoDanych = new ZawodnicyRepository();
         protected void Page_Load(object sender, EventArgs e)
         {
 

@@ -44,7 +44,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="P04AplikacjaZawodnicy.Core">
+    <Reference Include="P04AplikacjaZawodnicy.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\08Dzien6-master\P04AplikacjaZawodnicy.Core\bin\Debug\P04AplikacjaZawodnicy.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />

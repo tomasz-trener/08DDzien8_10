@@ -1,4 +1,7 @@
 ﻿using P04AplikacjaZawodnicy.Core;
+using P04AplikacjaZawodnicy.Core.DataSource;
+using P04AplikacjaZawodnicy.Core.ViewModels;
+using P04AplikacjaZawodnicy.Core.Zawodnicy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +16,7 @@ namespace P02AplikacjaZawodnicy
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            IDostepDoDanych iDostepDoDanych = new ZawodnicyRepositoryLINQ();
+            IZawodnicyDataSource iDostepDoDanych = new ZawodnicyRepositoryLINQ();
             DaneWykresu daneWykresu= iDostepDoDanych.WygenerujWykres(RodzajDanych.Wzrost);
 
             JavaScriptSerializer jss = new JavaScriptSerializer();

@@ -1,4 +1,7 @@
 ﻿using P04AplikacjaZawodnicy.Core;
+using P04AplikacjaZawodnicy.Core.DataSource;
+using P04AplikacjaZawodnicy.Core.Domain;
+using P04AplikacjaZawodnicy.Core.Zawodnicy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +21,9 @@ namespace P02AplikacjaZawodnicy
 
             string wielkoscStrony = Request["wielkoscStrony"];
             string numerStrony = Request["numerStrony"];
-         
 
-            IDostepDoDanych iDostepDoDanych = new ZawodnicyRepositoryLINQ();
+
+            IZawodnicyDataSource iDostepDoDanych = new ZawodnicyRepositoryLINQ();
             
             Zawodnik[] zawodnicy;
             if (string.IsNullOrEmpty(wielkoscStrony))
